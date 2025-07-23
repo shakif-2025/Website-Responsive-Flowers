@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Flower Shop</title>
     <link rel="stylesheet" href="styles/flower-shop.css" />
+    <!-- google font: Noto Serif , inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font-Awesome CDN -->
     <link
       rel="stylesheet"
@@ -15,7 +23,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <section class="navbar">
         <img class="logo" src="./assets/logo.png" alt="" />
         <nav>
@@ -30,6 +38,27 @@
             </li>
           </ul>
         </nav>
+      </section>
+
+      <section class="banner">
+        <div class="banner-content">
+          <h1 class="banner-title noto-serif-font">
+            always
+            <span class="primary-color"
+              >fresh <br />
+              flowers</span
+            >
+          </h1>
+          <p class="banner-description inter-font">
+            Indulge your senses with the beauty and fragrance of <br />
+            our fresh flower shop. From classic roses to exotic <br />
+            blooms, we offer a wide variety of fresh flowers that <br />
+            are perfect for any occasion.
+          </p>
+        </div>
+        <div class="banner-image">
+          <img src="./assets/hero-flower.png" alt="" />
+        </div>
       </section>
     </header>
 
