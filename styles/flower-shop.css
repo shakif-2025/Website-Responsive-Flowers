@@ -19,6 +19,18 @@
 .primary-color {
   color: #e95a08;
 }
+.section-title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: auto;
+  margin-bottom: 16px;
+}
+.section description {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: auto;
+}
 
 /* header-styles */
 .header {
@@ -74,6 +86,18 @@ nav li a i {
   font-size: 22px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
+}
+
+/* main styles */
+main {
+  width: 1140px;
+  margin: 0 auto;
+}
+/* our plants section styles */
+
+.our-plants {
+  text-align: center;
+  margin: 120px 150px 50px 150px;
 }
 
 /* Responsive media query for small devices */
