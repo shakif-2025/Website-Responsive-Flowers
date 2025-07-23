@@ -1,0 +1,36 @@
+/* Navbar styles */
+.navbar {
+  margin: 30px 150px 0 150px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+nav li a i {
+  font-size: 22px;
+}
+/* Responsive media query for small devices */
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    margin: 50px 20px 0 16px;
+  }
+  ul li:nth-child(1),
+  ul li:nth-child(2),
+  ul li:nth-child(3) {
+    display: none;
+  }
+}
