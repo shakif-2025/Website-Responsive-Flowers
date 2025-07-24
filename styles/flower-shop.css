@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 /* Google font: Noto Serif*/
 
@@ -18,6 +20,30 @@
 /* Shared styles */
 .primary-color {
   color: #e95a08;
+}
+.secondary-color {
+  color: #111111;
+}
+.btn-primary {
+  background-color: #e95a08;
+  padding: 20px 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 30px;
+}
+.btn-primary:hover {
+  background-color: aquamarine;
+  color: darkblue;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
 }
 .section-title {
   font-size: 50px;
@@ -78,7 +104,6 @@ nav li a i {
 .banner-title {
   font-size: 65px;
   font-weight: 700;
-  text-transform: uppercase;
   margin-bottom: 13px;
 }
 
@@ -93,14 +118,46 @@ main {
   width: 1140px;
   margin: 0 auto;
 }
-/* our plants section styles */
 
-.our-plants {
+/* our plants section styles */
+.plants-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.our-plants .section-contents {
   text-align: center;
   margin: 120px 150px 50px 150px;
 }
+.plant-card {
+  width: 270px;
+}
+.plant-card img {
+  margin-bottom: 30px;
+}
+.flower-card-contents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.flower-card-contents,
+.flower-card-title .flower-card-price {
+  margin-bottom: 30px;
+}
+.flower-card-title {
+  font-size: 22px;
+  font-weight: 500;
+  /* line-height: 150%; */
+}
+.flower-card-price {
+  font-size: 22px;
+  font-weight: 700;
+  /* line-height: 150%; */
+  margin-top: -10px;
+}
 
 /* Responsive media query for small devices */
+
 @media screen and (max-width: 576px) {
   /* navbar responsive styles */
   .navbar {
@@ -123,10 +180,19 @@ main {
     width: 100%;
     margin: 28px 0 65px 0;
   }
-}
+  .banner-image {
+    margin: 20px 0 0 16px;
+  }
 
-.banner-image {
-  margin: 20px 0 0 16px;
+  /* our plants section responsive */
+  .plants-cards-container {
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+  }
+  .plant-card {
+    width: 100%;
+    margin: 28px 14px;
+  }
 }
 
 .hide {
