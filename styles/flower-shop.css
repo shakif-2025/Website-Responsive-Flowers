@@ -72,8 +72,8 @@
   align-items: center;
 }
 .logo {
-  width: 130px;
-  height: 80px;
+  width: 200px;
+  height: 100px;
 }
 
 nav ul {
@@ -88,9 +88,10 @@ nav ul li {
 nav li a {
   text-decoration: none;
   color: black;
+  font-size: 25px;
 }
 nav li a i {
-  font-size: 15px;
+  font-size: 25px;
 }
 
 nav ul li:nth-child(1) {
@@ -191,6 +192,155 @@ main {
   max-width: 540px;
 }
 
+/* latest deals styles */
+.section-contents {
+  margin-top: 130px;
+}
+.section-title {
+  margin-bottom: 16px;
+}
+
+.deals-image-container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1 1fr);
+}
+
+.deals-image-container-ana {
+  background-image: url("../assets/deal-ana.png");
+  width: 367px;
+  height: 200px;
+  border-radius: 14px;
+}
+.deals-image-container-bloom {
+  background-image: url("../assets/deal-bloom.png");
+  width: 367px;
+  height: 195px;
+  grid-column: span 3;
+  border-radius: 14px;
+}
+.deals-image-container-zabo {
+  background-image: url("../assets/deal-zabo.png");
+  width: 750px;
+  height: 420;
+  grid-column: span 2;
+  border-radius: 14px;
+}
+.deals-image-container-ana,
+.deals-image-container-bloom {
+  grid-row: span 2;
+}
+.bloom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bloom p {
+  font-size: 20px;
+  font-weight: 700;
+  columns: #ffffff;
+}
+.bloom button {
+  color: #ffffff;
+  font-size: 22px;
+
+  padding: 15px 45px;
+}
+.ana {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ana p {
+  font-size: 20px;
+  font-weight: 700;
+  columns: #ffffff;
+}
+button {
+  color: #ffffff;
+  font-size: 22px;
+
+  padding: 15px 45px;
+}
+.zabo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.zabo p {
+  font-size: 40px;
+  font-weight: 700;
+  columns: #ffffff;
+}
+button {
+  color: #ffffff;
+  font-size: 22px;
+
+  padding: 15px 45px;
+}
+
+/* colorful-Bunch section styles */
+
+.colorful-Bunch {
+  height: 533px;
+
+  background-image: url("../assets/news-letter-bg.png");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.submit,
+.email {
+  display: inline;
+}
+
+/* Footer styles */
+
+footer {
+  width: 1140px;
+  margin: 0 auto;
+}
+.footer-container {
+  margin: 50px 160px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 110px;
+}
+
+.footer-navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-navbar li {
+  margin-bottom: 32px;
+  list-style: none;
+  gap: 110px;
+}
+.footer-navbar li a {
+  text-decoration: none;
+  color: #6b7280;
+}
+.social-media {
+  display: flex;
+  gap: 24px;
+}
+.social-media img {
+  width: 36px;
+  height: 36px;
+}
+
+/* .brand-logo,
+.footer-navbar,
+.social-media {
+  margin: auto;
+} */
 /*? Responsive media query for small devices */
 
 @media screen and (max-width: 576px) {
@@ -200,7 +350,12 @@ main {
     align-items: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
-
+  nav li a {
+    font-size: 40px;
+  }
+  nav li a i {
+    font-size: 30px;
+  }
   nav ul li:nth-child(1),
   nav ul li:nth-child(2),
   nav ul li:nth-child(3) {
@@ -210,7 +365,6 @@ main {
   /*? banner responsive styles */
   .banner {
     flex-direction: column-reverse;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
   .banner-content {
     width: 100%;
@@ -231,12 +385,16 @@ main {
   .plants-cards-container {
     grid-template-columns: repeat(2, auto);
     gap: 15px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
   .plant-card {
     width: 100%;
-    margin: 28px 14px;
+    margin: 28px 0px;
   }
+
+  /* ! .plant-card :nth-child(2n) {
+    margin-right: calc(100% - 28px);
+    margin-left: calc(100% - 28px);
+  } */
 
   /* ? Our deals responsive styles */
   .Flower-and-Plants {
@@ -254,6 +412,15 @@ main {
   }
   .Flower-and-Plants-Lover li {
     margin-bottom: 16px;
+  }
+
+  /* ? footer responsive styles */
+  .footer-container,
+  .footer-navbar {
+    grid-template-columns: 1fr;
+  }
+  .footer-container {
+    gap: 25px;
   }
 }
 
