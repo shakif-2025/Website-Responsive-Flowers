@@ -81,7 +81,10 @@ nav ul {
   gap: 30px;
   align-items: center;
 }
-
+main section {
+  width: 1140px;
+  margin: 0 auto;
+}
 nav ul li {
   list-style: none;
 }
@@ -199,87 +202,26 @@ main {
 .section-title {
   margin-bottom: 16px;
 }
-
+.latest-deals {
+  margin-bottom: 120px;
+}
 .deals-image-container {
   margin-top: 120px;
-  margin-bottom: 120px;
+
   display: grid;
-  gap: 28px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1 1fr);
+  gap: 20px;
+}
+#img1 img,
+#img2 img {
+  border-radius: 15px;
+}
+#img1 .bloom {
+  margin-bottom: 25px;
 }
 
-.deals-image-container-ana {
-  background-image: url("../assets/deal-ana.png");
-  width: 367px;
-  height: 200px;
-  border-radius: 14px;
-}
-.deals-image-container-bloom {
-  background-image: url("../assets/deal-bloom.png");
-  width: 367px;
-  height: 195px;
-  grid-column: span 3;
-  border-radius: 14px;
-}
-.deals-image-container-zabo {
-  background-image: url("../assets/deal-zabo.png");
-  width: 750px;
-  height: 420;
-  grid-column: span 2;
-  border-radius: 14px;
-}
-.deals-image-container-ana,
-.deals-image-container-bloom {
+#img3 {
   grid-row: span 2;
-}
-.bloom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.bloom p {
-  font-size: 20px;
-  font-weight: 700;
-  columns: #ffffff;
-}
-.bloom button {
-  color: #ffffff;
-  font-size: 22px;
-
-  padding: 15px 45px;
-}
-.ana {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.ana p {
-  font-size: 20px;
-  font-weight: 700;
-  columns: #ffffff;
-}
-button {
-  color: #ffffff;
-  font-size: 22px;
-
-  padding: 15px 45px;
-}
-.zabo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.zabo p {
-  font-size: 40px;
-  font-weight: 700;
-  columns: #ffffff;
-}
-button {
-  color: #ffffff;
-  font-size: 22px;
-
-  padding: 15px 45px;
 }
 
 /* colorful-Bunch section styles */
@@ -336,11 +278,6 @@ footer {
   height: 36px;
 }
 
-/* .brand-logo,
-.footer-navbar,
-.social-media {
-  margin: auto;
-} */
 /*? Responsive media query for small devices */
 
 @media screen and (max-width: 576px) {
@@ -412,6 +349,23 @@ footer {
   }
   .Flower-and-Plants-Lover li {
     margin-bottom: 16px;
+  }
+
+  /* ? latest deals responsive styles  */
+  .deals-image-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  #img1 img,
+  #img2 img {
+    width: 100%;
+  }
+  #img1 {
+    margin-bottom: 20px;
+  }
+  #img2 {
+    margin-bottom: 20px;
   }
 
   /* ? footer responsive styles */
