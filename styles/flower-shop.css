@@ -175,6 +175,7 @@ main {
 
   display: flex;
   gap: 60px;
+
   align-items: center;
 }
 .section-title {
@@ -182,11 +183,6 @@ main {
 }
 .Flower-and-Plants-Lover ul li {
   margin-bottom: 20px;
-}
-
-/* Our deals style  */
-.section-title {
-  margin-bottom: 15px;
 }
 .Flower-and-Plants-Lover {
   max-width: 540px;
@@ -213,7 +209,6 @@ main {
 
   /*? banner responsive styles */
   .banner {
-    display: flex;
     flex-direction: column-reverse;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
