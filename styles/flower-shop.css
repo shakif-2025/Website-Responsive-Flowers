@@ -70,10 +70,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
 }
 .logo {
   width: 130px;
   height: 80px;
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
 }
 
 nav ul {
@@ -90,7 +93,19 @@ nav li a {
   color: black;
 }
 nav li a i {
-  font-size: 22px;
+  font-size: 15px;
+}
+
+ul li:nth-child(1) {
+  color: #252432;
+  font-weight: 700;
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
+}
+ul li:nth-child(2),
+ul li:nth-child(3),
+ul li:nth-child(4) {
+  color: gray;
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
 }
 
 /* banner styles */
@@ -99,6 +114,7 @@ nav li a i {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
 }
 
 .banner-title {
@@ -112,7 +128,13 @@ nav li a i {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
-
+.banner-content {
+  margin-top: 174px;
+}
+.banner-image {
+  width: 570px;
+  margin-top: 118px;
+}
 /* main styles */
 main {
   width: 1140px;
@@ -124,6 +146,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 1); */
 }
 .our-plants .section-contents {
   text-align: center;
@@ -132,7 +155,7 @@ main {
 .plant-card {
   width: 270px;
 }
-.plant-card img {
+.card-image {
   margin-bottom: 30px;
 }
 .flower-card-contents {
@@ -140,20 +163,19 @@ main {
   justify-content: center;
   flex-direction: column;
 }
-.flower-card-contents,
-.flower-card-title .flower-card-price {
-  margin-bottom: 30px;
-}
+
 .flower-card-title {
   font-size: 22px;
   font-weight: 500;
-  /* line-height: 150%; */
+  line-height: 150%;
+  margin-bottom: 15px;
 }
+
 .flower-card-price {
   font-size: 22px;
   font-weight: 700;
-  /* line-height: 150%; */
-  margin-top: -10px;
+  line-height: 150%;
+  margin-bottom: 28px;
 }
 
 /* Responsive media query for small devices */
@@ -163,6 +185,7 @@ main {
   .navbar {
     margin: 50px 16px 0 16px;
     align-items: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 
   ul li:nth-child(1),
@@ -175,6 +198,7 @@ main {
   .banner {
     display: flex;
     flex-direction: column-reverse;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
   .banner-content {
     width: 100%;
@@ -188,6 +212,7 @@ main {
   .plants-cards-container {
     grid-template-columns: repeat(2, auto);
     gap: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
   .plant-card {
     width: 100%;
