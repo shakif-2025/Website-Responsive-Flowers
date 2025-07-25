@@ -518,7 +518,10 @@ ol li a {
     margin-left: 90px;
   }
   /* ? footer responsive styles */
-
+  footer {
+    display: flex;
+    justify-content: flex-end;
+  }
   .footer-container {
     flex-direction: column;
   }
