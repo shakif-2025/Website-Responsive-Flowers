@@ -172,16 +172,29 @@ main {
   margin-bottom: 28px;
 }
 
+/* Challenge section - 01 */
 /* Flower-and-Plants styles */
+
 .Flower-and-Plants {
   margin-top: 210px;
   margin-bottom: 133px;
+
+  position: relative;
 
   display: flex;
   gap: 60px;
 
   align-items: center;
 }
+
+/* .flower-store-image {
+  width: 540px;
+}
+
+.Flower-and-Plants-Lover {
+  width: 540px;
+} */
+
 .section-title {
   margin-bottom: 20px;
 }
@@ -189,10 +202,21 @@ main {
   margin-bottom: 20px;
 }
 .Flower-and-Plants-Lover {
-  max-width: 540px;
+  width: 540px;
+  padding: 20px;
+  /* border: 2px solid slateblue; */
 }
 .flower-store-image {
-  max-width: 540px;
+  width: 540px;
+  height: 600px;
+}
+.trusted-badge {
+  width: 286px;
+  height: 286px;
+
+  position: absolute;
+  top: -115px;
+  right: 490px;
 }
 
 /* latest deals styles */
@@ -210,17 +234,18 @@ main {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  /* gap: 20px; */
 }
 #img1 img,
 #img2 img {
   border-radius: 15px;
 }
-#img1 .bloom {
+.bloom,
+.ana {
   margin-bottom: 25px;
 }
 
-#img3 {
+#img2 {
   grid-row: span 2;
 }
 
@@ -332,20 +357,30 @@ footer {
     margin: 28px 0px;
   }
 
+  .trusted-badge {
+    display: none;
+  }
+
   /* ! .plant-card :nth-child(2n) {
     margin-right: calc(100% - 28px);
     margin-left: calc(100% - 28px);
   } */
 
-  /* ? Our deals responsive styles */
-  .Flower-and-Plants {
+  /* ? Flower and plants lover responsive styles */
+  .Flower-and-Plants,
+  .Flower-and-Plants-Lover {
     flex-direction: column;
   }
 
+  /* .Flower-and-Plants-Lover {
+    width: 358px;
+  }
   .flower-store-image {
     width: 100%;
-  }
-  .Flower-and-Plants-Lover {
+  } */
+
+  .Flower-and-Plants-Lover,
+  .Flower-and-Plants {
     padding: 5px 10px;
   }
   .Flower-and-Plants-Lover .section-title {
@@ -365,12 +400,12 @@ footer {
   #img2 img {
     width: 100%;
   }
-  #img1 {
-    margin-bottom: 20px;
-  }
-  #img2 {
-    margin-bottom: 20px;
-  }
+  /* #img1 {
+    margin-bottom: px;
+  } */
+  /* #img2 {
+    margin-top: 20px;
+  } */
 
   /* ? footer responsive styles */
   .footer-container,
