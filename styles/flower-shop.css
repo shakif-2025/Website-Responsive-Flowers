@@ -127,7 +127,6 @@ nav ul li:nth-child(4) {
 .banner-description {
   font-size: 22px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
 }
 .banner-content {
   margin-top: 174px;
@@ -430,7 +429,6 @@ ol li a {
   .banner-description {
     font-size: 18px;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.5);
   }
   .banner-image img {
     margin: 20px 0 0 16px;
