@@ -358,7 +358,7 @@ input[type="submit"] {
 
 /* footer styles */
 footer {
-  margin: 30px 50px;
+  margin: 30px 170px;
 }
 
 .footer-container {
@@ -508,7 +508,6 @@ ol li a {
   /* ? footer responsive styles */
   footer {
     display: flex;
-    justify-content: flex-end;
   }
   .footer-container {
     flex-direction: column;
