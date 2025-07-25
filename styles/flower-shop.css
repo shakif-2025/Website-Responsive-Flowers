@@ -322,10 +322,11 @@ a {
   position: relative;
 }
 
-.bunch-container {
+/* .bunch-container {
   top: 50%;
   left: 30%;
-}
+} */
+
 .section-title {
   position: absolute;
   bottom: 60%;
@@ -487,14 +488,10 @@ ol li a {
     left: 25%;
   }
   /*Colorful bunch section responsive styles */
-  .colorful-Bunch .section-title {
-    font-size: 50px;
-    color: #ffffff;
-  }
   .input-field {
     position: absolute;
     top: 55%;
-    left: 24%;
+    left: 27%;
   }
 
   input[type="submit"] {
@@ -507,16 +504,10 @@ ol li a {
   }
   .section-title {
     position: absolute;
-    top: 35%;
-    left: 35%;
+    top: 45%;
+    left: 33%;
   }
-  .input-field {
-    position: absolute;
-    top: 46%;
-    left: 30%;
-    margin-top: 51px;
-    margin-left: 90px;
-  }
+
   /* ? footer responsive styles */
   footer {
     display: flex;
